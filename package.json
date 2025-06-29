@@ -1,5 +1,30 @@
 {
+  "name": "mentalhealthproject",
+  "version": "1.0.0",
+  "description": "Mission Statements To help users take small steps to do sustainable actions in order to slow the advancement of Global Warming",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pratheekt72/MentalHealthProject.git"
+  },
+  "keywords": [],
+  "author": "Pratheek Thummalapalli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pratheekt72/MentalHealthProject/issues"
+  },
+  "homepage": "https://github.com/pratheekt72/MentalHealthProject#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "mongodb": "^6.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }

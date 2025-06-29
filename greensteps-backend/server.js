@@ -1,15 +1,18 @@
+require('dotenv').config(); // Load env variables first
 const express = require('express');
-const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./Config/db');
 
-
-dotenv.config();
 connectDB();
 
 const app = express();
+
 app.use(cors());
 app.use(express.json());
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
+
 
 app.use('/api/users', require('./routes/userRoutes'));
 
