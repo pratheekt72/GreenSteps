@@ -26,22 +26,13 @@ function App() {
   };
 
   // Test backend connection
-  const testBackend = async () => {
-    try {
-      const res = await fetch('http://localhost:5000/');
-      const text = await res.text();
-      alert(text); // should say "Backend is working!"
-    } catch (error) {
-      alert('Could not connect to backend: ' + error.message);
-    }
-  };
+  
 
   return (
     <div style={{ maxWidth: 400, margin: 'auto', padding: 20 }}>
-      <h2>Test Backend Connection</h2>
-      <button onClick={testBackend}>Ping Backend</button>
+      
 
-      <h2>Register</h2>
+      <h2>Register Yourself to make an impact on the environment</h2>
       <form onSubmit={handleSubmit}>
         <input
           name="name"
